@@ -1,0 +1,99 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="co.appbrewery.magic8ball"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->C:\Users\TGC10\StudioProjects\magic-8-ball-flutter\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\Users\TGC10\StudioProjects\magic-8-ball-flutter\android\app\src\main\AndroidManifest.xml
+10
+11    <!--
+12         The INTERNET permission is required for development. Specifically,
+13         flutter needs it to communicate with the running application
+14         to allow setting breakpoints, to provide hot reload, etc.
+15    -->
+16    <uses-permission android:name="android.permission.INTERNET" />
+16-->C:\Users\TGC10\StudioProjects\magic-8-ball-flutter\android\app\src\main\AndroidManifest.xml:8:5-66
+16-->C:\Users\TGC10\StudioProjects\magic-8-ball-flutter\android\app\src\main\AndroidManifest.xml:8:22-64
+17    <!--
+18     io.flutter.app.FlutterApplication is an android.app.Application that
+19         calls FlutterMain.startInitialization(this); in its onCreate method.
+20         In most cases you can leave this as-is, but you if you want to provide
+21         additional functionality it is fine to subclass or reimplement
+22         FlutterApplication and put your custom class here.
+23    -->
+24    <application
+25        android:name="android.app.Application"
+25-->C:\Users\TGC10\StudioProjects\magic-8-ball-flutter\android\app\src\main\AndroidManifest.xml:16:9-42
+26        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+26-->[androidx.core:core:1.6.0] C:\Users\TGC10\.gradle\caches\transforms-2\files-2.1\b8653113bb402d69217b623468746a00\core-1.6.0\AndroidManifest.xml:24:18-86
+27        android:debuggable="true"
+28        android:icon="@mipmap/ic_launcher"
+28-->C:\Users\TGC10\StudioProjects\magic-8-ball-flutter\android\app\src\main\AndroidManifest.xml:18:9-43
+29        android:label="magic_8_ball" >
+29-->C:\Users\TGC10\StudioProjects\magic-8-ball-flutter\android\app\src\main\AndroidManifest.xml:17:9-37
+30        <meta-data
+30-->C:\Users\TGC10\StudioProjects\magic-8-ball-flutter\android\app\src\main\AndroidManifest.xml:20:9-22:33
+31            android:name="flutterEmbedding"
+31-->C:\Users\TGC10\StudioProjects\magic-8-ball-flutter\android\app\src\main\AndroidManifest.xml:21:13-44
+32            android:value="2" />
+32-->C:\Users\TGC10\StudioProjects\magic-8-ball-flutter\android\app\src\main\AndroidManifest.xml:22:13-30
+33
+34        <activity
+34-->C:\Users\TGC10\StudioProjects\magic-8-ball-flutter\android\app\src\main\AndroidManifest.xml:24:9-42:20
+35            android:name="co.appbrewery.magic8ball.MainActivity"
+35-->C:\Users\TGC10\StudioProjects\magic-8-ball-flutter\android\app\src\main\AndroidManifest.xml:25:13-41
+36            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density"
+36-->C:\Users\TGC10\StudioProjects\magic-8-ball-flutter\android\app\src\main\AndroidManifest.xml:28:13-137
+37            android:hardwareAccelerated="true"
+37-->C:\Users\TGC10\StudioProjects\magic-8-ball-flutter\android\app\src\main\AndroidManifest.xml:29:13-47
+38            android:launchMode="singleTop"
+38-->C:\Users\TGC10\StudioProjects\magic-8-ball-flutter\android\app\src\main\AndroidManifest.xml:26:13-43
+39            android:theme="@style/LaunchTheme"
+39-->C:\Users\TGC10\StudioProjects\magic-8-ball-flutter\android\app\src\main\AndroidManifest.xml:27:13-47
+40            android:windowSoftInputMode="adjustResize" >
+40-->C:\Users\TGC10\StudioProjects\magic-8-ball-flutter\android\app\src\main\AndroidManifest.xml:30:13-55
+41
+42            <!--
+43                 This keeps the window background of the activity showing
+44                 until Flutter renders its first frame. It can be removed if
+45                 there is no splash screen (such as the default splash screen
+46                 defined in @style/LaunchTheme).
+47            -->
+48            <meta-data
+48-->C:\Users\TGC10\StudioProjects\magic-8-ball-flutter\android\app\src\main\AndroidManifest.xml:35:13-37:40
+49                android:name="io.flutter.app.android.SplashScreenUntilFirstFrame"
+49-->C:\Users\TGC10\StudioProjects\magic-8-ball-flutter\android\app\src\main\AndroidManifest.xml:36:17-82
+50                android:value="true" />
+50-->C:\Users\TGC10\StudioProjects\magic-8-ball-flutter\android\app\src\main\AndroidManifest.xml:37:17-37
+51
+52            <intent-filter>
+52-->C:\Users\TGC10\StudioProjects\magic-8-ball-flutter\android\app\src\main\AndroidManifest.xml:38:13-41:29
+53                <action android:name="android.intent.action.MAIN" />
+53-->C:\Users\TGC10\StudioProjects\magic-8-ball-flutter\android\app\src\main\AndroidManifest.xml:39:17-68
+53-->C:\Users\TGC10\StudioProjects\magic-8-ball-flutter\android\app\src\main\AndroidManifest.xml:39:25-66
+54
+55                <category android:name="android.intent.category.LAUNCHER" />
+55-->C:\Users\TGC10\StudioProjects\magic-8-ball-flutter\android\app\src\main\AndroidManifest.xml:40:17-76
+55-->C:\Users\TGC10\StudioProjects\magic-8-ball-flutter\android\app\src\main\AndroidManifest.xml:40:27-74
+56            </intent-filter>
+57        </activity>
+58
+59        <uses-library
+59-->[androidx.window:window:1.0.0-beta04] C:\Users\TGC10\.gradle\caches\transforms-2\files-2.1\5f7e81c9068524cfb8439adfaceff680\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+60            android:name="androidx.window.extensions"
+60-->[androidx.window:window:1.0.0-beta04] C:\Users\TGC10\.gradle\caches\transforms-2\files-2.1\5f7e81c9068524cfb8439adfaceff680\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+61            android:required="false" />
+61-->[androidx.window:window:1.0.0-beta04] C:\Users\TGC10\.gradle\caches\transforms-2\files-2.1\5f7e81c9068524cfb8439adfaceff680\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+62        <uses-library
+62-->[androidx.window:window:1.0.0-beta04] C:\Users\TGC10\.gradle\caches\transforms-2\files-2.1\5f7e81c9068524cfb8439adfaceff680\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+63            android:name="androidx.window.sidecar"
+63-->[androidx.window:window:1.0.0-beta04] C:\Users\TGC10\.gradle\caches\transforms-2\files-2.1\5f7e81c9068524cfb8439adfaceff680\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+64            android:required="false" />
+64-->[androidx.window:window:1.0.0-beta04] C:\Users\TGC10\.gradle\caches\transforms-2\files-2.1\5f7e81c9068524cfb8439adfaceff680\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+65    </application>
+66
+67</manifest>
